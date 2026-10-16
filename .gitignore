@@ -1,0 +1,18 @@
+# Bundled portable Python runtime - large, regeneratable, not source code
+app/python-portable/
+
+# Offline GeoIP/ASN/OUI lookup data - large binary blobs, rebuildable via
+# app/build_geodata.py and app/build_oui.py
+app/geodata/
+
+# Local-only runtime state - never meant to be shared/committed
+app/history.db
+app/block_rules.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS cruft
+.DS_Store
+Thumbs.db
